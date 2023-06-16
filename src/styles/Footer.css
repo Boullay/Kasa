@@ -1,0 +1,27 @@
+.Footer-logo {
+    width: 122px;
+    padding-bottom: 15px;
+}
+
+.Footer-text {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.Footer-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 66px 0px 29px;
+}
+
+@media screen and (max-width: 375px) {
+    .Footer-text {
+        font-size: 12px;
+    }
+    
+}

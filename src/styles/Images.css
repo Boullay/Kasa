@@ -1,0 +1,28 @@
+.Image-banner {
+    border-radius: 25px;
+    width: 1240px;
+    height: 223px;
+    object-fit: cover;
+    position: relative;
+}
+.darken {
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+    position: absolute;
+}
+
+.Image-banner-text {
+    color: white;
+    font-size: 48px;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
+
+.Image-banner-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+}
