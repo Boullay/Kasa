@@ -1,0 +1,39 @@
+.Carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1240px;
+    height: 415px;
+    margin: 1%;
+}
+.Slide {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &.Hidden {
+        display: none;
+    }
+}
+.Arrow {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    &.Left {
+        left: 1rem;
+    }
+    &.Right {
+        right: 1rem;
+    }
+}
+.indicator {
+    position: absolute;
+    bottom: 1em;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}

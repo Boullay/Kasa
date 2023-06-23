@@ -1,0 +1,65 @@
+/*Barre About*/
+.Menu-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.Info__Titre {
+        font-size: 24px;
+}
+.Menu-display .Barre-size {
+        width: 1023px;
+        margin: 15px 0;
+}
+/*******************/
+
+/*Section commune*/
+
+.Barre-titre {
+    color: white;
+    padding-left: 15px;
+}
+
+.Barre-text {
+    position: relative;
+    z-index: -1;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #f6f6f6;
+    color: #ff6060;
+    padding: 15px;
+    margin: 0;
+    transform-origin: top center;
+    animation: slideDown 300ms ease-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.Barre-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+}
+.Red {
+    background-color: #ff6060;
+}
+.Barre-btn {
+    border: none;
+    background: none;
+    padding-right: 18px;
+    cursor: pointer;
+}
+/********************/

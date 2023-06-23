@@ -1,0 +1,34 @@
+.Logement-Display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Titre {
+    font-size: 36px;
+    margin: 0;
+}
+.Titre-Display {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+
+.Font-Red {
+    color: #ff6060;
+}
+.Portrait {
+    width: 64px;
+    border-radius: 100%;
+}
+/*Barre Logement*/
+.Barre-logement {
+    width: 582px;
+}
+.Barre-Display {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/***************/
