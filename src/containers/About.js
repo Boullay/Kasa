@@ -1,4 +1,4 @@
-import ImageAbout from '../components/ImageAbout';
+import ImageAbout from '../components/Images/ImageAbout';
 import Menu from '../components/MenuAbout';
 
 const About = () => {

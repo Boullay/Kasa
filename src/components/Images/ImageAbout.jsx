@@ -1,5 +1,5 @@
-import '../styles/Images.css';
-import Image from '../assets/IMG2.png'; 
+import '../Images/Images.scss';
+import Image from '../../assets/IMG2.png'; 
 
 function ImageBanner() {
     return (<div className='Image-banner-display'>

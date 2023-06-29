@@ -9,17 +9,44 @@
 }
 .Titre-Display {
     display: flex;
+    flex-direction: column;
+}
+.Info-Display {
+    display: flex;
     justify-content: space-between;
     width: 86%;
+}
+
+.Tags-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 30px;
+}
+.Tags {
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 30px;
+    font-size: 14px;
+    margin-right: 10px;
 }
 
 .Font-Red {
     color: #ff6060;
 }
+.Fiche-Hote {
+    margin-bottom: 34px;
+}
 .Portrait {
     width: 64px;
     border-radius: 100%;
 }
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+
 /*Barre Logement*/
 .Barre-logement {
     width: 582px;
@@ -32,3 +59,39 @@
 }
 
 /***************/
+
+@media screen and (max-width: 375px) {
+    .Titre {
+        font-size: 18px;
+    }
+    .Font-Red {
+        &.mediaSize {
+        font-size: 12px;
+    }
+    }
+    .Info-Display {
+        flex-direction: column;
+    }
+    .Titre-Display {
+        &.mediaDisplay {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    .Portrait {
+        width: 32px;
+    }
+    .Tags {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+    .Barre-Display {
+        flex-direction: column;
+        width: 335px;
+        margin-bottom: 30px;
+    }
+    .Barre-logement {
+        width: 335px;
+        margin-bottom: 20px;
+    }
+}

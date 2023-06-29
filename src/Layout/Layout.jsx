@@ -1,9 +1,7 @@
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 const Layout = ({children}) => {
     return(<>
-        <Banner />
         <main>{children}</main>
         <Footer />
     </>

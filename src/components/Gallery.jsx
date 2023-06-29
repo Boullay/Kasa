@@ -1,6 +1,6 @@
-import Card from "./Card"
+import Card from "./Card/Card"
 import logements from '../logements.json'
-import '../styles/Card.scss';
+import '../components/Card/Card.scss';
 
 const Gallery = () => {
     return (

@@ -1,4 +1,4 @@
-import '../styles/Rep404.css';
+import '../Erreur404/Rep404.scss';
 
 const Erreur404 = () => {
   const text = "Oups! La page que vous demandez n'existe pas."

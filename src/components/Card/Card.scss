@@ -42,3 +42,21 @@
         height: 87%;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .Card {
+        height: 255px;
+        width: 335px;
+        &.shadow {
+            height: 83%;
+            width: 94%;
+        }
+    }
+    .Gallery-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .Gallery {
+        width: 355px;
+    }
+}

@@ -23,3 +23,18 @@
     cursor: pointer;
     margin-top: 139px;
 }
+
+@media screen and (max-width: 375px) {
+    .Error-404 {
+        font-size: 110px;
+    }
+    .Error-text {
+        font-size: 18px;
+        padding: 70px 30px;
+        text-align: center;
+    }
+    .Error-btn {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}

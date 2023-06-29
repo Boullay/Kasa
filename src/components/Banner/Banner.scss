@@ -1,0 +1,45 @@
+.Banner-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px;
+}
+
+.Banner-text {
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.Banner-btn {
+    text-decoration: none;
+    color: #FF6060;
+    margin: 1px 50px;
+    cursor: pointer;
+    &:hover {
+        border-bottom: 1px solid #FF6060;
+        margin: 0px 50px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .logo {
+        width: 145px;
+    }
+    .Banner-btn {
+        font-size: 12px;
+        margin-right: 0;
+        margin-left: 30px;
+        &:hover {
+            margin-right: 0 ;
+            margin-left: 30px;
+        }
+    }
+    .Banner-display {
+        padding: 20px;
+    }
+    .Banner-text {
+        padding: 0;
+    }
+}

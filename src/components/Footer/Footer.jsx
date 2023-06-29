@@ -1,7 +1,5 @@
-import logo from '../assets/logo-kasa-blanc.png';
-import '../styles/Footer.css';
-
-
+import logo from '../../assets/logo-kasa-blanc.png';
+import '../Footer/Footer.scss';
 
 function Footer() {
     const text = "© 2020 Kasa. All rights reserved";
