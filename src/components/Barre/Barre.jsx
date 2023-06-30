@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import ArrowDown from '../assets/Icones/ArrowDown';
-import ArrowUp from '../assets/Icones/ArrowUp';
-import '../styles/Barrederoulante.scss';
+import ArrowDown from '../../assets/Icones/ArrowDown';
+import ArrowUp from '../../assets/Icones/ArrowUp';
+import '../Barre/Barrederoulante.scss';
 
 
 function Barre({info}) {

@@ -1,5 +1,5 @@
 import { infos } from './infos';
-import Barre from './Barre';
+import Barre from './Barre/Barre';
 
 function Menu() {
     

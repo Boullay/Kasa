@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import logements from '../logements.json'
 import Star from "../assets/Icones/Star/Star";
-import Barre from "../components/Barre";
+import Barre from "../components/Barre/Barre";
 import '../containers/Logement.scss';
 import Carousel from '../components/Carousel/Carousel';
 
