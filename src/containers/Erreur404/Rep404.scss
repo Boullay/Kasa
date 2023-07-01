@@ -24,7 +24,16 @@
     margin-top: 139px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Error-display {
+        margin: 90px 5%;
+    }
+    .Error-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .Error-404 {
         font-size: 110px;
     }

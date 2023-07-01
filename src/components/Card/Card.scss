@@ -1,5 +1,5 @@
 .Gallery {
-    width: 1240px;
+    width: 100%;
     background-color: #f6f6f6;
     border-radius: 10px;
     margin: auto;
@@ -38,12 +38,32 @@
 
     &.shadow {
         box-shadow: 0px -70px 20px rgba(0, 0, 0, 0.5) inset;
-        width: 95%;
+        width: 96%;
         height: 87%;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1440px) {
+    .Gallery {
+        width: 90%;
+    }
+    .Card {
+        &.shadow {
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Card {
+        &.shadow{
+            width: 93%;
+            height: 87%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
     .Card {
         height: 255px;
         width: 335px;

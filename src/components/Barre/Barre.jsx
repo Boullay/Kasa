@@ -13,9 +13,11 @@ function Barre({info}) {
             <span key={info.id} className='Barre-titre Info__Titre'>{info.title}</span>
                 <button className='Barre-btn' onClick={() => setToggle(!toggle)}>{toggle ? <ArrowUp /> : <ArrowDown />}</button>
             </div>
-            {toggle ? <article>{Array.isArray(info.description) ? info.description.map(desc => (
-                <p className='Barre-text'>{desc}</p>
-            )) : <p className='Barre-text'>{info.description}</p> } 
+            {toggle ? <article className='Animation'>{Array.isArray(info.description) ? 
+            <ul className='List'>
+                { info.description.map(desc => (<li className='Barre-text'>{desc}</li>))}
+            </ul>
+            : <p className='Barre-text desc'>{info.description}</p> } 
             </article> : ""}
         </section>
     )

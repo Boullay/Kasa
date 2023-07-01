@@ -6,11 +6,12 @@
     margin: 50px 0;
 }
 .Info__Titre {
-        font-size: 24px;
+    font-size: 24px;
 }
 .Menu-display .Barre-size {
-        width: 1023px;
-        margin: 15px 0;
+    max-width: 1023px;
+    width: 100%;
+    margin: 15px 0;
 }
 /*******************/
 
@@ -20,18 +21,34 @@
     color: white;
     padding-left: 15px;
 }
+.Animation {
+    position: relative;
+    z-index: -1;
+    height: 65%;
+    background: #f6f6f6;
+    padding: 20px 15px;
+    border-radius: 0 0 5px 5px;
+}
 
 .Barre-text {
     position: relative;
-    z-index: -1;
     font-size: 18px;
-    border-radius: 5px;
-    background: #f6f6f6;
     color: #ff6060;
-    padding: 15px;
+    padding: 5px;
     margin: 0;
     transform-origin: top center;
     animation: slideDown 300ms ease-out forwards;
+    &.desc {
+        background: #f6f6f6;
+        border-radius: 5px;
+        line-height: 30px;
+    }
+}
+.List {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    border-radius:  0 0 5px 5px;
 }
 
 @keyframes slideDown {
@@ -63,7 +80,13 @@
 }
 /********************/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1440px) {
+    .Menu-display {
+        margin: 50px 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .Menu-display .Barre-size {
         width: 335px;
     }
