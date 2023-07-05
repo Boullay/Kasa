@@ -1,13 +1,22 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import logements from '../logements.json'
 import Star from "../assets/Icones/Star/Star";
 import Barre from "../components/Barre/Barre";
 import '../containers/Logement.scss';
 import Carousel from '../components/Carousel/Carousel';
+import { useEffect } from "react";
 
 const Logement = () => {
     const { id } = useParams();
-    const logement = logements.find(logement => logement.id === id)
+    const navigate = useNavigate();
+    const logement = logements.find(logement => logement.id === id);
+    useEffect(() => {
+        if (!logement || typeof (logement) == 'undefined') {
+            navigate('404')
+        }
+    }, [navigate, logement])
+ 
+
     const showRating = (logement) => {
         const stars = [];
         for (let i = 0; i < 5; i++) {
@@ -16,7 +25,9 @@ const Logement = () => {
         return stars;
     }
 
-    return (<>
+    return (<> 
+    {(logement && typeof (logement) != 'undefined') ?
+    
         <div className="Logement-Display">
             <Carousel logement={logement} />
             <div className="Info-Display">
@@ -44,7 +55,7 @@ const Logement = () => {
                 <Barre info={{ title: "Equipement", description: logement.equipments }} />
             </section>
         </div>
-
+            : ''}
     </>
     )
 }
