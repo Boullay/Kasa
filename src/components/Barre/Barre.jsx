@@ -11,7 +11,7 @@ function Barre({info}) {
         <section className='Barre-logement Barre-size'>
             <div className='Barre-display Red'>
             <span key={info.id} className='Barre-titre Info__Titre'>{info.title}</span>
-                <button className='Barre-btn' onClick={() => setToggle(!toggle)}>{toggle ? <ArrowUp /> : <ArrowDown />}</button>
+                <button className={toggle ? 'Barre-btn open' : 'Barre-btn close'} onClick={() => setToggle(!toggle)}><ArrowDown /></button>
             </div>
             {toggle ? <article className='Animation'>{Array.isArray(info.description) ? 
             <ul className='List'>

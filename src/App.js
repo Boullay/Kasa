@@ -5,12 +5,12 @@ import Erreur404 from './containers/Erreur404/Erreur404';
 import Logement from './containers/Logement';
 import Layout from './Layout/Layout';
 import About from './containers/About';
-import Banner from './components/Banner/Banner';
+import Header from './components/Header/Header';
 
 function App() {
   return (<Layout>
     <BrowserRouter>
-    <Banner />
+    <Header />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='Apropos' element={<About />} />
